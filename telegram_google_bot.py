@@ -1,5 +1,5 @@
-from telegram.ext import Updater, MessageHandler
-from telegram import filters
+from telegram import Update
+from telegram.ext import Application, MessageHandler, CommandHandler, filters, ContextTypes
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
@@ -12,27 +12,28 @@ client = gspread.authorize(creds)
 sheet = client.open("for biblioheat_bot").sheet1  # Укажите название вашей таблицы
 
 # Функция обработки сообщений от пользователя
-def handle_message(update, context):
+async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     query = update.message.text  # Получаем текст от пользователя
     data = sheet.get_all_records()  # Загружаем все данные из таблицы
 
     # Поиск совпадений
     for row in data:
         if query.lower() in str(row).lower():  # Проверяем наличие текста в строке
-            update.message.reply_text(f"Найдено: {row}")
+            await update.message.reply_text(f"Найдено: {row}")
             return
 
-    update.message.reply_text("Ничего не найдено 😔")
+    await update.message.reply_text("Ничего не найдено 😔")
 
 # Настройка и запуск бота
 def main():
-    updater = Updater("8061703889:AAHWhFDcMl9Shmqy_EBT4xn9msB95BDcu3o", use_context=True)  # Замените ВАШ_ТОКЕН на токен бота
-    dp = updater.dispatcher
+    # Создаем приложение
+    application = Application.builder().token("8061703889:AAHWhFDcMl9Shmqy_EBT4xn9msB95BDcu3o").build()
 
-    dp.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
+    # Добавляем обработчик сообщений
+    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
-    updater.start_polling()
-    updater.idle()
+    # Запускаем бота
+    application.run_polling()
 
 if __name__ == '__main__':
     main()
