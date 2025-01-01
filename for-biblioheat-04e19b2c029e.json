@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "for-biblioheat",
+  "private_key_id": "04e19b2c029e08da0f15cb6b38b127e95414dfbf",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCT2yjRLiLHTpxw\nnVpqisQOijPaIYaSmsUFvv4AKKBM2hTDZ5XA1Cj1aeNNnlMmbrN9DagLniHfrSSc\nI3WC1VJ8V6FrhbhfIYsmC1S0udQuoFesf/q4Zt1hItd0cvWrjCaHLDVqyiaOhc1K\nQE5qNDzGvpPDyQoHQrtSkf9nov6YLaszuPMpVop0UA/iTQph0qbFY9BAg3wMniL4\nfneDUJMIxEIqrkrYuCzx+jVSrWOcm4vsfwGFdZP/kEfyXhdePUETGZKQ5zYegPmg\nQmdLG8vPIxBNRLI9MgCfa3d4g8DDmM5bFSFHjm2DO1uVQWN04Uy2aHhK/U1qN5Ag\nbfeOGVqlAgMBAAECggEADOYqTfGF9Dhd+o8nw7K+fvw8oNOa73BULvemJjJlJb9C\n33dKf8uilSJ7Q5rD607uFsNZvUW6884hqwOG7XaZ3yIwAXblilsdTiDf73Jk2fqA\nG5sArxS+TIqjHFQpLaGo/NL1CA+BxJ5Uth0dGjPbd4VJ0+NWniKKwB3fl9WG+5Si\nb0U32ljh/sDQBM4+BLlh4fb/GUaggBuKNcEmiqU6nkE5GGRJKx2XwWlatZhgGyKx\nHtk/BHsjS1pUGlk9ktGijo7GS0gYX1LKbhuwgB1D2iCkVmjsDN/6+C0xHee76BNJ\nHrYqKMrVkBWYoudC0bAEOi61nLGN3U2g7TEsY792oQKBgQDFXwXuWtkyHokU7vvy\nuKKEUZecvr3WfJ0N3tROADrVkQ9Bc/MBykMtVTBBHZbL1HTmFNq+DK37UJF8cgs5\nB7EUWhNRvwujlDGsAQFuIe7BioAClnD9AVOc9zJkLc2m2WXsci6Rmk5c7UZU2IjO\nZyq+TLThVvKAZHWmverg1GFBNQKBgQC/xso05E6KQL3g+cwkOMNN+vSyeeGvjybV\n9F+fCF4P4FpXKzf1SYaUECstUeWlH86E/4q/dykruXeTtDPMW7tq7cEa6lUEaAFF\nkTBsk6N4k1+rRkBg0e4cug75UW8p+aMw+3Jxi5RzDJpv3lRBGmRJUQLT8ODMq7F4\nEVpt+QPRsQKBgBUD0xvX7Hxbp/jkoUrswdEY5u23mXr29bn+WdicSadntJohgGRW\nZuSyx1qHjgDR9EhzO/80VmoF4BfCBNPjr8Uc+iWgE9ss8kUALmjNkCBnYM3lus4V\nkBOMdn8YKWd0ilesqKy0I1fdo7lw/NANSA3PGQtNOLDXAXfpjNK3iktpAoGADprW\nBWcpsA+0JjD/4fZMsWCeSAVOMa+GNp8QtSzO9QiR+Ld64HxD+nysvRvSkFu2v5wy\nddheU00hlScRFswZntASd7lG1joRdrnS5UHtHh6jF4kXGAiEyL1GrKgN/jVbvzw2\n//ywRn68OC7HXdnjr02zGG7sv8mHj2xK5bskFlECgYB+A5srqgMRyG7ZIu8HV1sh\nXmNWY+Ry/iwsniSEgWn/zUU00crFdcsQjoRSohsCu1vlZx508iFUwtLWfKP+uR69\nXwgmR7aTob9dJq+uuovUvb1CvCUjk2/V4lkH8buscLLh0WCQFefCVlNqhZwCNuz/\nMWA/452qQNOimVCw+abGCg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "biblioheat-bot@for-biblioheat.iam.gserviceaccount.com",
+  "client_id": "114459789929403816377",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/biblioheat-bot%40for-biblioheat.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
