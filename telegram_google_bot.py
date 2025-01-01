@@ -4,11 +4,11 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 # Настройка доступа к Google Sheets
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name("path_to_your_credentials.json", scope)  # Путь к JSON-файлу
+creds = ServiceAccountCredentials.from_json_keyfile_name("for-biblioheat-04e19b2c029e.json", scope)  # Путь к JSON-файлу
 client = gspread.authorize(creds)
 
 # Открываем Google таблицу
-sheet = client.open("Название таблицы").sheet1  # Укажите название вашей таблицы
+sheet = client.open("for biblioheat_bot").sheet1  # Укажите название вашей таблицы
 
 # Функция обработки сообщений от пользователя
 def handle_message(update, context):
@@ -25,7 +25,7 @@ def handle_message(update, context):
 
 # Настройка и запуск бота
 def main():
-    updater = Updater("ВАШ_ТОКЕН", use_context=True)  # Замените ВАШ_ТОКЕН на токен бота
+    updater = Updater("8061703889:AAHWhFDcMl9Shmqy_EBT4xn9msB95BDcu3o", use_context=True)  # Замените ВАШ_ТОКЕН на токен бота
     dp = updater.dispatcher
 
     dp.add_handler(MessageHandler(Filters.text & ~Filters.command, handle_message))
