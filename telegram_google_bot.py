@@ -1,4 +1,5 @@
-pip show python-telegram-bot
+import telegram
+print(telegram.__version__)
 
 from telegram.ext import Updater, MessageHandler
 from telegram import filters
