@@ -9,7 +9,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name("for-biblioheat-04e19b2
 client = gspread.authorize(creds)
 
 # Открываем Google таблицу
-sheet = client.open("for biblioheat_bot").sheet1  # Укажите название вашей таблицы
+sheet = client.open(for biblioheat_bot).sheet1  # Укажите название вашей таблицы
 
 # Функция обработки сообщений от пользователя
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -27,7 +27,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 # Настройка и запуск бота
 def main():
     # Создаем приложение
-    application = Application.builder().token("8061703889:AAHWhFDcMl9Shmqy_EBT4xn9msB95BDcu3o").build()
+    application = Application.builder().token(8061703889:AAHWhFDcMl9Shmqy_EBT4xn9msB95BDcu3o).build()
 
     # Добавляем обработчик сообщений
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
